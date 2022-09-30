@@ -69,6 +69,7 @@ pb <- txtProgressBar(min = 0,      # Minimum value of the progress bar
 
 for(b in 1:length(batch)){
   
+  
 setTxtProgressBar(pb, b)  # Sets the progress bar to the current state
 filename = batch[b]
 
