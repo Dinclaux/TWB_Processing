@@ -31,7 +31,7 @@ if (!require("stringr")){
 #########################################################
 
 
-setwd("C:/Users/mdinclaux/Documents/Script/TWB_Robot/Rearrangement/")
+setwd("C:/Users/mdinclaux/Documents/Script/TWB_Processing")
 
 
 data <- read.csv("2022_07_22 picking plaque 2.csv", header = TRUE, sep = ",",
