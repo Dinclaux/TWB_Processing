@@ -38,19 +38,19 @@ if (!require("tidyverse")){
 
 setwd("C:/Users/mdinclaux/Documents/Script/TWB_Processing")
 
-batch = c("220719-Data cinétique Constitutif 1 alpha.xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie.xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (2).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (3).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (2).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (3).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (2).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (3).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (2).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (3).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (2).xlsx",
-          "220719-Data cinétique Constitutif 1 alpha - Copie (3).xlsx"
-          )
+batch = c("exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx",
+          "exemple_data_vibi.xlsx")
 OD = 0.250
 
 
