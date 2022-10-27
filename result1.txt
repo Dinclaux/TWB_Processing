@@ -1,0 +1,873 @@
+Response B :
+
+Call:
+lm(formula = B ~ Hydroxylase + Kétolase + Hydroxylase * Kétolase - 
+    1, data = rawdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-68.000  -2.000  -0.167   2.000  98.000 
+
+Coefficients: (175 not defined because of singularities)
+                                    Estimate Std. Error t value Pr(>|t|)    
+HydroxylaseH01_tronqué               45.0000    11.4064   3.945 0.000106 ***
+HydroxylaseH02                       48.0000    11.4064   4.208 3.71e-05 ***
+HydroxylaseH04                       46.3333    11.4064   4.062 6.70e-05 ***
+HydroxylaseH06                       45.3333    11.4064   3.974 9.48e-05 ***
+HydroxylaseH09                       45.3333    11.4064   3.974 9.48e-05 ***
+HydroxylaseH11                       46.6667    11.4064   4.091 5.96e-05 ***
+HydroxylaseH14                       45.6667    11.4064   4.004 8.45e-05 ***
+HydroxylaseH17                       43.0000    11.4064   3.770 0.000208 ***
+HydroxylaseH18                       45.6667    15.3033   2.984 0.003155 ** 
+HydroxylaseH26                       40.0000    15.3033   2.614 0.009553 ** 
+HydroxylaseH27                       44.3333    11.4064   3.887 0.000133 ***
+HydroxylaseH30                       44.6667    10.2022   4.378 1.83e-05 ***
+HydroxylaseH32                       52.6667     7.2141   7.301 4.79e-12 ***
+HydroxylaseH34                       50.6667     7.2141   7.023 2.49e-11 ***
+HydroxylaseH39                       47.3333     7.2141   6.561 3.57e-10 ***
+KétolaseK02_optimisé                  0.3333    10.2022   0.033 0.973964    
+KétolaseK04                          -3.6667    10.2022  -0.359 0.719631    
+KétolaseK05                          -5.6667    10.2022  -0.555 0.579144    
+KétolaseK05_tronqué                  -4.6667    10.2022  -0.457 0.647809    
+KétolaseK07                          -8.0000    10.2022  -0.784 0.433773    
+KétolaseK08                          -8.6667    10.2022  -0.849 0.396504    
+KétolaseK11                         -11.6667    10.2022  -1.144 0.254018    
+KétolaseK12                         -13.6667    10.2022  -1.340 0.181722    
+KétolaseK13                         -16.0000    10.2022  -1.568 0.118207    
+KétolaseK15                         -16.6667    10.2022  -1.634 0.103722    
+KétolaseK16                         -13.6667    10.2022  -1.340 0.181722    
+KétolaseK17                          -4.0000    10.2022  -0.392 0.695373    
+KétolaseK18                          -1.3333    10.2022  -0.131 0.896136    
+KétolaseK19                          -9.0000    13.4963  -0.667 0.505544    
+KétolaseK20                         -13.6667    13.4963  -1.013 0.312317    
+KétolaseK22                         -11.3333    13.4963  -0.840 0.401938    
+KétolaseK23                         -12.0000     8.8354  -1.358 0.175756    
+HydroxylaseH02:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK02_optimisé  -3.0000    14.4281  -0.208 0.835472    
+HydroxylaseH34:KétolaseK02_optimisé   0.3333    14.4281   0.023 0.981588    
+HydroxylaseH39:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK04           -5.6667    14.4281  -0.393 0.694871    
+HydroxylaseH34:KétolaseK04           -1.0000    14.4281  -0.069 0.944805    
+HydroxylaseH39:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK05           -4.6667    14.4281  -0.323 0.746658    
+HydroxylaseH34:KétolaseK05           -3.3333    14.4281  -0.231 0.817499    
+HydroxylaseH39:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK05_tronqué   -2.0000    14.4281  -0.139 0.889875    
+HydroxylaseH34:KétolaseK05_tronqué   -0.3333    14.4281  -0.023 0.981588    
+HydroxylaseH39:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK07           -2.6667    14.4281  -0.185 0.853532    
+HydroxylaseH34:KétolaseK07           -1.3333    14.4281  -0.092 0.926452    
+HydroxylaseH39:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK08           -4.6667    14.4281  -0.323 0.746658    
+HydroxylaseH34:KétolaseK08           -2.6667    14.4281  -0.185 0.853532    
+HydroxylaseH39:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK11           -3.3333    14.4281  -0.231 0.817499    
+HydroxylaseH34:KétolaseK11            0.6667    14.4281   0.046 0.963187    
+HydroxylaseH39:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK12           -2.3333    14.4281  -0.162 0.871669    
+HydroxylaseH34:KétolaseK12           -0.3333    14.4281  -0.023 0.981588    
+HydroxylaseH39:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK13           -1.3333    14.4281  -0.092 0.926452    
+HydroxylaseH34:KétolaseK13           -0.3333    14.4281  -0.023 0.981588    
+HydroxylaseH39:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK15            0.3333    14.4281   0.023 0.981588    
+HydroxylaseH34:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH39:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK16           -4.3333    14.4281  -0.300 0.764193    
+HydroxylaseH34:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH39:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK17            5.3333    14.4281   0.370 0.711989    
+HydroxylaseH34:KétolaseK17            0.3333    14.4281   0.023 0.981588    
+HydroxylaseH39:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK18           -1.6667    14.4281  -0.116 0.908139    
+HydroxylaseH34:KétolaseK18            0.6667    14.4281   0.046 0.963187    
+HydroxylaseH39:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK19           -4.0000    14.4281  -0.277 0.781851    
+HydroxylaseH04:KétolaseK19           -4.3333    14.4281  -0.300 0.764193    
+HydroxylaseH06:KétolaseK19           -4.0000    14.4281  -0.277 0.781851    
+HydroxylaseH09:KétolaseK19           -4.6667    14.4281  -0.323 0.746658    
+HydroxylaseH11:KétolaseK19           -4.3333    14.4281  -0.300 0.764193    
+HydroxylaseH14:KétolaseK19           -4.3333    14.4281  -0.300 0.764193    
+HydroxylaseH17:KétolaseK19           -3.0000    14.4281  -0.208 0.835472    
+HydroxylaseH18:KétolaseK19           -6.3333    14.4281  -0.439 0.661110    
+HydroxylaseH26:KétolaseK19                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK19           -5.0000    14.4281  -0.347 0.729254    
+HydroxylaseH30:KétolaseK19           -3.3333    12.4951  -0.267 0.789888    
+HydroxylaseH32:KétolaseK19           -2.3333    16.1311  -0.145 0.885117    
+HydroxylaseH34:KétolaseK19           -1.1667    16.1311  -0.072 0.942408    
+HydroxylaseH39:KétolaseK19           -0.5000    12.4951  -0.040 0.968116    
+HydroxylaseH02:KétolaseK20            2.0000    14.4281   0.139 0.889875    
+HydroxylaseH04:KétolaseK20            3.3333    14.4281   0.231 0.817499    
+HydroxylaseH06:KétolaseK20            2.0000    14.4281   0.139 0.889875    
+HydroxylaseH09:KétolaseK20            2.3333    14.4281   0.162 0.871669    
+HydroxylaseH11:KétolaseK20            1.0000    14.4281   0.069 0.944805    
+HydroxylaseH14:KétolaseK20            0.6667    14.4281   0.046 0.963187    
+HydroxylaseH17:KétolaseK20            0.3333    14.4281   0.023 0.981588    
+HydroxylaseH18:KétolaseK20                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK20                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK20            0.6667    14.4281   0.046 0.963187    
+HydroxylaseH30:KétolaseK20            1.5000    12.4951   0.120 0.904552    
+HydroxylaseH32:KétolaseK20            3.8333    16.1311   0.238 0.812378    
+HydroxylaseH34:KétolaseK20            3.1667    16.1311   0.196 0.844545    
+HydroxylaseH39:KétolaseK20            8.3333    13.4963   0.617 0.537554    
+HydroxylaseH02:KétolaseK22           -1.0000    14.4281  -0.069 0.944805    
+HydroxylaseH04:KétolaseK22           -1.6667    14.4281  -0.116 0.908139    
+HydroxylaseH06:KétolaseK22           -1.3333    14.4281  -0.092 0.926452    
+HydroxylaseH09:KétolaseK22           -2.3333    14.4281  -0.162 0.871669    
+HydroxylaseH11:KétolaseK22           -1.3333    14.4281  -0.092 0.926452    
+HydroxylaseH14:KétolaseK22           -2.0000    14.4281  -0.139 0.889875    
+HydroxylaseH17:KétolaseK22           -3.0000    14.4281  -0.208 0.835472    
+HydroxylaseH18:KétolaseK22                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK22                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK22           -2.0000    14.4281  -0.139 0.889875    
+HydroxylaseH30:KétolaseK22           -1.5000    12.4951  -0.120 0.904552    
+HydroxylaseH32:KétolaseK22           64.6667    16.2916   3.969 9.67e-05 ***
+HydroxylaseH34:KétolaseK22           -0.6667    16.1311  -0.041 0.967071    
+HydroxylaseH39:KétolaseK22            0.1667    12.4951   0.013 0.989369    
+HydroxylaseH02:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK23          154.8333    14.4281  10.731  < 2e-16 ***
+HydroxylaseH34:KétolaseK23           -3.6667    13.4963  -0.272 0.786115    
+HydroxylaseH39:KétolaseK23                NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 12.5 on 227 degrees of freedom
+  (21 observations deleted due to missingness)
+Multiple R-squared:  0.9428,	Adjusted R-squared:  0.9189 
+F-statistic:  39.4 on 95 and 227 DF,  p-value: < 2.2e-16
+
+
+Response G :
+
+Call:
+lm(formula = G ~ Hydroxylase + Kétolase + Hydroxylase * Kétolase - 
+    1, data = rawdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-27.333  -3.250  -0.333   3.333  32.200 
+
+Coefficients: (175 not defined because of singularities)
+                                    Estimate Std. Error t value Pr(>|t|)    
+HydroxylaseH01_tronqué              142.3333     8.2157  17.325  < 2e-16 ***
+HydroxylaseH02                      153.3333     8.2157  18.663  < 2e-16 ***
+HydroxylaseH04                      130.0000     8.2157  15.823  < 2e-16 ***
+HydroxylaseH06                      127.6667     8.2157  15.539  < 2e-16 ***
+HydroxylaseH09                      126.0000     8.2157  15.336  < 2e-16 ***
+HydroxylaseH11                      147.0000     8.2157  17.893  < 2e-16 ***
+HydroxylaseH14                      142.0000     8.2157  17.284  < 2e-16 ***
+HydroxylaseH17                      112.3333     8.2157  13.673  < 2e-16 ***
+HydroxylaseH18                      147.3333    11.0225  13.367  < 2e-16 ***
+HydroxylaseH26                      102.6667    11.0225   9.314  < 2e-16 ***
+HydroxylaseH27                      141.0000     8.2157  17.162  < 2e-16 ***
+HydroxylaseH30                      150.0000     7.3484  20.413  < 2e-16 ***
+HydroxylaseH32                      142.0000     5.1961  27.328  < 2e-16 ***
+HydroxylaseH34                      150.3333     5.1961  28.932  < 2e-16 ***
+HydroxylaseH39                      149.3333     5.1961  28.740  < 2e-16 ***
+KétolaseK02_optimisé                  7.6667     7.3484   1.043 0.297912    
+KétolaseK04                          13.0000     7.3484   1.769 0.078220 .  
+KétolaseK05                           5.0000     7.3484   0.680 0.496930    
+KétolaseK05_tronqué                   4.0000     7.3484   0.544 0.586743    
+KétolaseK07                           5.6667     7.3484   0.771 0.441422    
+KétolaseK08                          -7.3333     7.3484  -0.998 0.319364    
+KétolaseK11                          -2.3333     7.3484  -0.318 0.751133    
+KétolaseK12                         -17.0000     7.3484  -2.313 0.021593 *  
+KétolaseK13                          -5.6667     7.3484  -0.771 0.441422    
+KétolaseK15                         -11.0000     7.3484  -1.497 0.135800    
+KétolaseK16                         -24.3333     7.3484  -3.311 0.001080 ** 
+KétolaseK17                           8.0000     7.3484   1.089 0.277450    
+KétolaseK18                           9.3333     7.3484   1.270 0.205341    
+KétolaseK19                          13.6667     9.7210   1.406 0.161122    
+KétolaseK20                         -25.0000     9.7210  -2.572 0.010756 *  
+KétolaseK22                           5.0000     9.7210   0.514 0.607506    
+KétolaseK23                          10.3333     6.3639   1.624 0.105817    
+HydroxylaseH02:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK02_optimisé  -2.0000    10.3922  -0.192 0.847560    
+HydroxylaseH34:KétolaseK02_optimisé  -2.0000    10.3922  -0.192 0.847560    
+HydroxylaseH39:KétolaseK02_optimisé       NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK04           18.6667    10.3922   1.796 0.073788 .  
+HydroxylaseH34:KétolaseK04           -2.3333    10.3922  -0.225 0.822548    
+HydroxylaseH39:KétolaseK04                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK05           -1.0000    10.3922  -0.096 0.923426    
+HydroxylaseH34:KétolaseK05          -10.6667    10.3922  -1.026 0.305788    
+HydroxylaseH39:KétolaseK05                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK05_tronqué   -9.3333    10.3922  -0.898 0.370077    
+HydroxylaseH34:KétolaseK05_tronqué   -7.6667    10.3922  -0.738 0.461437    
+HydroxylaseH39:KétolaseK05_tronqué        NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK07          -11.3333    10.3922  -1.091 0.276620    
+HydroxylaseH34:KétolaseK07           -6.0000    10.3922  -0.577 0.564269    
+HydroxylaseH39:KétolaseK07                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK08           16.3333    10.3922   1.572 0.117413    
+HydroxylaseH34:KétolaseK08           10.3333    10.3922   0.994 0.321116    
+HydroxylaseH39:KétolaseK08                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK11           -7.6667    10.3922  -0.738 0.461437    
+HydroxylaseH34:KétolaseK11           -9.3333    10.3922  -0.898 0.370077    
+HydroxylaseH39:KétolaseK11                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK12           16.0000    10.3922   1.540 0.125045    
+HydroxylaseH34:KétolaseK12            8.0000    10.3922   0.770 0.442212    
+HydroxylaseH39:KétolaseK12                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK13          -14.0000    10.3922  -1.347 0.179269    
+HydroxylaseH34:KétolaseK13          -17.3333    10.3922  -1.668 0.096709 .  
+HydroxylaseH39:KétolaseK13                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK15           10.6667    10.3922   1.026 0.305788    
+HydroxylaseH34:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH39:KétolaseK15                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK16            3.0000    10.3922   0.289 0.773090    
+HydroxylaseH34:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH39:KétolaseK16                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK17            3.6667    10.3922   0.353 0.724543    
+HydroxylaseH34:KétolaseK17           -7.0000    10.3922  -0.674 0.501260    
+HydroxylaseH39:KétolaseK17                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK18           -3.0000    10.3922  -0.289 0.773090    
+HydroxylaseH34:KétolaseK18           -9.3333    10.3922  -0.898 0.370077    
+HydroxylaseH39:KétolaseK18                NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK19          -42.3333    10.3922  -4.074 6.40e-05 ***
+HydroxylaseH04:KétolaseK19          -21.0000    10.3922  -2.021 0.044479 *  
+HydroxylaseH06:KétolaseK19          -21.3333    10.3922  -2.053 0.041236 *  
+HydroxylaseH09:KétolaseK19          -23.3333    10.3922  -2.245 0.025713 *  
+HydroxylaseH11:KétolaseK19          -34.6667    10.3922  -3.336 0.000993 ***
+HydroxylaseH14:KétolaseK19          -34.0000    10.3922  -3.272 0.001236 ** 
+HydroxylaseH17:KétolaseK19          -17.3333    10.3922  -1.668 0.096709 .  
+HydroxylaseH18:KétolaseK19          -62.0000    10.3922  -5.966 9.25e-09 ***
+HydroxylaseH26:KétolaseK19                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK19          -39.6667    10.3922  -3.817 0.000174 ***
+HydroxylaseH30:KétolaseK19          -46.5000     8.9999  -5.167 5.21e-07 ***
+HydroxylaseH32:KétolaseK19          -10.5000    11.6188  -0.904 0.367108    
+HydroxylaseH34:KétolaseK19          -18.0000    11.6188  -1.549 0.122723    
+HydroxylaseH39:KétolaseK19          -11.6667     8.9999  -1.296 0.196183    
+HydroxylaseH02:KétolaseK20           12.6667    10.3922   1.219 0.224159    
+HydroxylaseH04:KétolaseK20           38.6667    10.3922   3.721 0.000250 ***
+HydroxylaseH06:KétolaseK20           34.0000    10.3922   3.272 0.001236 ** 
+HydroxylaseH09:KétolaseK20           34.6667    10.3922   3.336 0.000993 ***
+HydroxylaseH11:KétolaseK20           20.0000    10.3922   1.925 0.055538 .  
+HydroxylaseH14:KétolaseK20           19.3333    10.3922   1.860 0.064125 .  
+HydroxylaseH17:KétolaseK20           24.0000    10.3922   2.309 0.021818 *  
+HydroxylaseH18:KétolaseK20                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK20                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK20           13.6667    10.3922   1.315 0.189805    
+HydroxylaseH30:KétolaseK20           13.1667     8.9999   1.463 0.144855    
+HydroxylaseH32:KétolaseK20           44.0000    11.6188   3.787 0.000195 ***
+HydroxylaseH34:KétolaseK20           31.0000    11.6188   2.668 0.008178 ** 
+HydroxylaseH39:KétolaseK20           21.3333     9.7210   2.195 0.029208 *  
+HydroxylaseH02:KétolaseK22           -2.3333    10.3922  -0.225 0.822548    
+HydroxylaseH04:KétolaseK22          -10.3333    10.3922  -0.994 0.321116    
+HydroxylaseH06:KétolaseK22          -11.6667    10.3922  -1.123 0.262776    
+HydroxylaseH09:KétolaseK22          -11.0000    10.3922  -1.058 0.290957    
+HydroxylaseH11:KétolaseK22           -5.6667    10.3922  -0.545 0.586094    
+HydroxylaseH14:KétolaseK22           -5.0000    10.3922  -0.481 0.630886    
+HydroxylaseH17:KétolaseK22           -0.6667    10.3922  -0.064 0.948906    
+HydroxylaseH18:KétolaseK22                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK22                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK22          -11.6667    10.3922  -1.123 0.262776    
+HydroxylaseH30:KétolaseK22          -10.1667     8.9999  -1.130 0.259818    
+HydroxylaseH32:KétolaseK22           34.8000    11.7344   2.966 0.003343 ** 
+HydroxylaseH34:KétolaseK22            3.8333    11.6188   0.330 0.741760    
+HydroxylaseH39:KétolaseK22           -1.5000     8.9999  -0.167 0.867779    
+HydroxylaseH02:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK23                NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK23           53.6667    10.3922   5.164 5.28e-07 ***
+HydroxylaseH34:KétolaseK23           -2.3333     9.7210  -0.240 0.810523    
+HydroxylaseH39:KétolaseK23                NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9 on 227 degrees of freedom
+  (21 observations deleted due to missingness)
+Multiple R-squared:  0.9972,	Adjusted R-squared:  0.9961 
+F-statistic: 865.4 on 95 and 227 DF,  p-value: < 2.2e-16
+
+
+Response R :
+
+Call:
+lm(formula = R ~ Hydroxylase + Kétolase + Hydroxylase * Kétolase - 
+    1, data = rawdata)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10.8333  -1.6667  -0.3333   2.0000  11.1667 
+
+Coefficients: (175 not defined because of singularities)
+                                      Estimate Std. Error t value Pr(>|t|)    
+HydroxylaseH01_tronqué               2.253e+02  3.529e+00  63.856  < 2e-16 ***
+HydroxylaseH02                       2.147e+02  3.529e+00  60.833  < 2e-16 ***
+HydroxylaseH04                       2.143e+02  3.529e+00  60.738  < 2e-16 ***
+HydroxylaseH06                       2.163e+02  3.529e+00  61.305  < 2e-16 ***
+HydroxylaseH09                       2.170e+02  3.529e+00  61.494  < 2e-16 ***
+HydroxylaseH11                       2.163e+02  3.529e+00  61.305  < 2e-16 ***
+HydroxylaseH14                       2.193e+02  3.529e+00  62.155  < 2e-16 ***
+HydroxylaseH17                       2.200e+02  3.529e+00  62.344  < 2e-16 ***
+HydroxylaseH18                       2.203e+02  4.734e+00  46.539  < 2e-16 ***
+HydroxylaseH26                       2.197e+02  4.734e+00  46.398  < 2e-16 ***
+HydroxylaseH27                       2.193e+02  3.529e+00  62.155  < 2e-16 ***
+HydroxylaseH30                       2.212e+02  3.156e+00  70.073  < 2e-16 ***
+HydroxylaseH32                       2.247e+02  2.232e+00 100.666  < 2e-16 ***
+HydroxylaseH34                       2.230e+02  2.232e+00  99.919  < 2e-16 ***
+HydroxylaseH39                       2.237e+02  2.232e+00 100.218  < 2e-16 ***
+KétolaseK02_optimisé                -3.333e-01  3.156e+00  -0.106  0.91598    
+KétolaseK04                          6.667e-01  3.156e+00   0.211  0.83290    
+KétolaseK05                         -2.333e+00  3.156e+00  -0.739  0.46050    
+KétolaseK05_tronqué                 -1.333e+00  3.156e+00  -0.422  0.67310    
+KétolaseK07                         -2.333e+00  3.156e+00  -0.739  0.46050    
+KétolaseK08                         -5.667e+00  3.156e+00  -1.795  0.07392 .  
+KétolaseK11                         -3.333e+00  3.156e+00  -1.056  0.29204    
+KétolaseK12                         -2.667e+00  3.156e+00  -0.845  0.39907    
+KétolaseK13                          1.000e+00  3.156e+00   0.317  0.75166    
+KétolaseK15                         -2.333e+00  3.156e+00  -0.739  0.46050    
+KétolaseK16                         -8.667e+00  3.156e+00  -2.746  0.00652 ** 
+KétolaseK17                          5.667e+00  3.156e+00   1.795  0.07392 .  
+KétolaseK18                          7.000e+00  3.156e+00   2.218  0.02756 *  
+KétolaseK19                         -7.667e+00  4.175e+00  -1.836  0.06764 .  
+KétolaseK20                         -9.667e+00  4.175e+00  -2.315  0.02150 *  
+KétolaseK22                         -6.667e+00  4.175e+00  -1.597  0.11173    
+KétolaseK23                         -4.667e+00  2.733e+00  -1.707  0.08914 .  
+HydroxylaseH02:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK02_optimisé  6.667e-01  4.464e+00   0.149  0.88141    
+HydroxylaseH34:KétolaseK02_optimisé -2.000e+00  4.464e+00  -0.448  0.65453    
+HydroxylaseH39:KétolaseK02_optimisé         NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK04           2.333e+00  4.464e+00   0.523  0.60166    
+HydroxylaseH34:KétolaseK04          -3.000e+00  4.464e+00  -0.672  0.50220    
+HydroxylaseH39:KétolaseK04                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK05           3.333e-01  4.464e+00   0.075  0.94054    
+HydroxylaseH34:KétolaseK05           6.667e-01  4.464e+00   0.149  0.88141    
+HydroxylaseH39:KétolaseK05                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK05_tronqué  -1.000e+00  4.464e+00  -0.224  0.82293    
+HydroxylaseH34:KétolaseK05_tronqué  -2.000e+00  4.464e+00  -0.448  0.65453    
+HydroxylaseH39:KétolaseK05_tronqué          NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK07          -2.000e+00  4.464e+00  -0.448  0.65453    
+HydroxylaseH34:KétolaseK07          -1.667e+00  4.464e+00  -0.373  0.70921    
+HydroxylaseH39:KétolaseK07                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK08           1.667e+00  4.464e+00   0.373  0.70921    
+HydroxylaseH34:KétolaseK08           6.667e-01  4.464e+00   0.149  0.88141    
+HydroxylaseH39:KétolaseK08                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK11          -6.667e-01  4.464e+00  -0.149  0.88141    
+HydroxylaseH34:KétolaseK11          -4.000e+00  4.464e+00  -0.896  0.37113    
+HydroxylaseH39:KétolaseK11                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK12          -1.000e+00  4.464e+00  -0.224  0.82293    
+HydroxylaseH34:KétolaseK12          -6.667e-01  4.464e+00  -0.149  0.88141    
+HydroxylaseH39:KétolaseK12                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK13          -5.333e+00  4.464e+00  -1.195  0.23339    
+HydroxylaseH34:KétolaseK13          -4.333e+00  4.464e+00  -0.971  0.33267    
+HydroxylaseH39:KétolaseK13                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK15          -3.333e+00  4.464e+00  -0.747  0.45597    
+HydroxylaseH34:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH39:KétolaseK15                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK16           3.333e-01  4.464e+00   0.075  0.94054    
+HydroxylaseH34:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH39:KétolaseK16                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK17          -7.667e+00  4.464e+00  -1.718  0.08723 .  
+HydroxylaseH34:KétolaseK17          -4.333e+00  4.464e+00  -0.971  0.33267    
+HydroxylaseH39:KétolaseK17                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK18          -1.133e+01  4.464e+00  -2.539  0.01178 *  
+HydroxylaseH34:KétolaseK18          -8.667e+00  4.464e+00  -1.942  0.05342 .  
+HydroxylaseH39:KétolaseK18                  NA         NA      NA       NA    
+HydroxylaseH02:KétolaseK19           1.333e+00  4.464e+00   0.299  0.76543    
+HydroxylaseH04:KétolaseK19           4.333e+00  4.464e+00   0.971  0.33267    
+HydroxylaseH06:KétolaseK19           5.000e+00  4.464e+00   1.120  0.26383    
+HydroxylaseH09:KétolaseK19           3.667e+00  4.464e+00   0.821  0.41225    
+HydroxylaseH11:KétolaseK19           3.000e+00  4.464e+00   0.672  0.50220    
+HydroxylaseH14:KétolaseK19           1.667e+00  4.464e+00   0.373  0.70921    
+HydroxylaseH17:KétolaseK19          -2.000e+00  4.464e+00  -0.448  0.65453    
+HydroxylaseH18:KétolaseK19          -4.333e+00  4.464e+00  -0.971  0.33267    
+HydroxylaseH26:KétolaseK19                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK19          -3.333e-01  4.464e+00  -0.075  0.94054    
+HydroxylaseH30:KétolaseK19          -5.000e-01  3.866e+00  -0.129  0.89720    
+HydroxylaseH32:KétolaseK19          -1.333e+00  4.990e+00  -0.267  0.78958    
+HydroxylaseH34:KétolaseK19           4.494e-14  4.990e+00   0.000  1.00000    
+HydroxylaseH39:KétolaseK19           4.833e+00  3.866e+00   1.250  0.21246    
+HydroxylaseH02:KétolaseK20           3.333e+00  4.464e+00   0.747  0.45597    
+HydroxylaseH04:KétolaseK20           6.000e+00  4.464e+00   1.344  0.18022    
+HydroxylaseH06:KétolaseK20           6.667e+00  4.464e+00   1.494  0.13668    
+HydroxylaseH09:KétolaseK20           5.667e+00  4.464e+00   1.270  0.20555    
+HydroxylaseH11:KétolaseK20           5.000e+00  4.464e+00   1.120  0.26383    
+HydroxylaseH14:KétolaseK20           4.000e+00  4.464e+00   0.896  0.37113    
+HydroxylaseH17:KétolaseK20           4.000e+00  4.464e+00   0.896  0.37113    
+HydroxylaseH18:KétolaseK20                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK20                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK20           1.000e+00  4.464e+00   0.224  0.82293    
+HydroxylaseH30:KétolaseK20           3.000e+00  3.866e+00   0.776  0.43851    
+HydroxylaseH32:KétolaseK20           8.333e-01  4.990e+00   0.167  0.86753    
+HydroxylaseH34:KétolaseK20           1.667e+00  4.990e+00   0.334  0.73871    
+HydroxylaseH39:KétolaseK20           1.200e+01  4.175e+00   2.874  0.00444 ** 
+HydroxylaseH02:KétolaseK22           4.667e+00  4.464e+00   1.045  0.29691    
+HydroxylaseH04:KétolaseK22           1.667e+00  4.464e+00   0.373  0.70921    
+HydroxylaseH06:KétolaseK22           2.000e+00  4.464e+00   0.448  0.65453    
+HydroxylaseH09:KétolaseK22          -3.333e-01  4.464e+00  -0.075  0.94054    
+HydroxylaseH11:KétolaseK22           4.667e+00  4.464e+00   1.045  0.29691    
+HydroxylaseH14:KétolaseK22           3.000e+00  4.464e+00   0.672  0.50220    
+HydroxylaseH17:KétolaseK22           2.000e+00  4.464e+00   0.448  0.65453    
+HydroxylaseH18:KétolaseK22                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK22                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK22           1.667e+00  4.464e+00   0.373  0.70921    
+HydroxylaseH30:KétolaseK22           3.667e+00  3.866e+00   0.949  0.34386    
+HydroxylaseH32:KétolaseK22          -6.600e+00  5.040e+00  -1.309  0.19169    
+HydroxylaseH34:KétolaseK22          -5.000e-01  4.990e+00  -0.100  0.92028    
+HydroxylaseH39:KétolaseK22           3.333e+00  3.866e+00   0.862  0.38943    
+HydroxylaseH02:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH04:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH06:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH09:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH11:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH14:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH17:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH18:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH26:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH27:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH30:KétolaseK23                  NA         NA      NA       NA    
+HydroxylaseH32:KétolaseK23          -1.950e+01  4.464e+00  -4.369  1.9e-05 ***
+HydroxylaseH34:KétolaseK23          -5.000e+00  4.175e+00  -1.198  0.23236    
+HydroxylaseH39:KétolaseK23                  NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.866 on 227 degrees of freedom
+  (21 observations deleted due to missingness)
+Multiple R-squared:  0.9998,	Adjusted R-squared:  0.9997 
+F-statistic: 1.068e+04 on 95 and 227 DF,  p-value: < 2.2e-16
+
+

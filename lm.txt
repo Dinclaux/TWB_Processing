@@ -1,0 +1,1230 @@
+Response growth_rate :
+
+Call:
+lm(formula = growth_rate ~ Promoteur + Terminateur + RBS + Promoteur * 
+    Terminateur * RBS - 1, data = rawdata)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.30138 -0.08326  0.00678  0.09766  1.12477 
+
+Coefficients: (226 not defined because of singularities)
+                                                                     Estimate Std. Error t value Pr(>|t|)    
+PromoteurJ23106                                                      1.678710   0.146875  11.430  < 2e-16 ***
+PromoteurJ23111                                                      1.689182   0.388594   4.347 1.73e-05 ***
+PromoteurJ23114                                                      1.791319   0.146875  12.196  < 2e-16 ***
+PromoteurPDummy                                                      1.996809   0.359768   5.550 5.04e-08 ***
+PromoteurPP1                                                         1.395512   0.119923  11.637  < 2e-16 ***
+TerminateurB0015                                                     0.129128   0.207712   0.622  0.53450    
+TerminateurB1006                                                     0.121977   0.207712   0.587  0.55736    
+TerminateurGluRS_terminator                                          0.139133   0.207712   0.670  0.50333    
+TerminateurTDummy                                                    0.076114   0.224355   0.339  0.73459    
+TerminateurtRNA_terminator                                           0.169630   0.224355   0.756  0.45002    
+RBSB0030                                                             0.108923   0.207712   0.524  0.60028    
+RBSB0032                                                             0.064042   0.207712   0.308  0.75799    
+RBSmetH_RBS                                                          0.193494   0.207712   0.932  0.35210    
+RBSnudC_RBS                                                          0.133928   0.207712   0.645  0.51942    
+RBSpilO_RBS                                                          0.189553   0.207712   0.913  0.36199    
+RBSrapA_RBS                                                          0.188074   0.207712   0.905  0.36574    
+RBSRDummy                                                           -0.166311   0.224355  -0.741  0.45893    
+RBSribo727_trp_                                                     -0.012701   0.224355  -0.057  0.95488    
+RBSrpiJ_RBS                                                          0.110597   0.207712   0.532  0.59469    
+RBSrpoB_RBS                                                          0.172465   0.207712   0.830  0.40683    
+RBStheoE_riboswitch                                                  0.141455   0.224355   0.630  0.52871    
+RBSToxT_5UTR_riboswitch                                              0.009644   0.224355   0.043  0.96573    
+PromoteurJ23111:TerminateurB0015                                    -0.574338   0.415424  -1.383  0.16754    
+PromoteurJ23114:TerminateurB0015                                    -0.129832   0.305744  -0.425  0.67131    
+PromoteurPDummy:TerminateurB0015                                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015                                       -0.307408   0.293749  -1.046  0.29593    
+PromoteurJ23111:TerminateurB1006                                    -0.067187   0.415424  -0.162  0.87160    
+PromoteurJ23114:TerminateurB1006                                    -0.155505   0.281244  -0.553  0.58061    
+PromoteurPDummy:TerminateurB1006                                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006                                       -0.236773   0.317286  -0.746  0.45593    
+PromoteurJ23111:TerminateurGluRS_terminator                         -0.004235   0.293749  -0.014  0.98851    
+PromoteurJ23114:TerminateurGluRS_terminator                          0.395922   0.317286   1.248  0.21278    
+PromoteurPDummy:TerminateurGluRS_terminator                                NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator                            -0.210081   0.317286  -0.662  0.50825    
+PromoteurJ23111:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy                                             NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator                          -0.510094   0.317286  -1.608  0.10865    
+PromoteurJ23114:TerminateurtRNA_terminator                          -0.193887   0.317286  -0.611  0.54147    
+PromoteurPDummy:TerminateurtRNA_terminator                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator                                    NA         NA      NA       NA    
+PromoteurJ23111:RBSB0030                                            -1.267367   0.415424  -3.051  0.00243 ** 
+PromoteurJ23114:RBSB0030                                            -0.013024   0.293749  -0.044  0.96466    
+PromoteurPDummy:RBSB0030                                                   NA         NA      NA       NA    
+PromoteurPP1:RBSB0030                                               -0.510347   0.293749  -1.737  0.08305 .  
+PromoteurJ23111:RBSB0032                                            -0.154561   0.415424  -0.372  0.71004    
+PromoteurJ23114:RBSB0032                                             0.079606   0.293749   0.271  0.78652    
+PromoteurPDummy:RBSB0032                                                   NA         NA      NA       NA    
+PromoteurPP1:RBSB0032                                               -0.165311   0.293749  -0.563  0.57389    
+PromoteurJ23111:RBSmetH_RBS                                         -0.127962   0.415424  -0.308  0.75821    
+PromoteurJ23114:RBSmetH_RBS                                         -0.206379   0.293749  -0.703  0.48271    
+PromoteurPDummy:RBSmetH_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSmetH_RBS                                            -0.952114   0.293749  -3.241  0.00128 ** 
+PromoteurJ23111:RBSnudC_RBS                                         -0.069781   0.415424  -0.168  0.86668    
+PromoteurJ23114:RBSnudC_RBS                                          0.003781   0.293749   0.013  0.98974    
+PromoteurPDummy:RBSnudC_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSnudC_RBS                                            -0.548384   0.293749  -1.867  0.06262 .  
+PromoteurJ23111:RBSpilO_RBS                                         -0.102083   0.415424  -0.246  0.80601    
+PromoteurJ23114:RBSpilO_RBS                                          0.329018   0.305744   1.076  0.28249    
+PromoteurPDummy:RBSpilO_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSpilO_RBS                                            -0.672532   0.281244  -2.391  0.01723 *  
+PromoteurJ23111:RBSrapA_RBS                                         -0.329648   0.415424  -0.794  0.42792    
+PromoteurJ23114:RBSrapA_RBS                                         -0.277449   0.508789  -0.545  0.58583    
+PromoteurPDummy:RBSrapA_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrapA_RBS                                            -0.511344   0.293749  -1.741  0.08245 .  
+PromoteurJ23111:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurJ23114:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurPDummy:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurPP1:RBSRDummy                                                     NA         NA      NA       NA    
+PromoteurJ23111:RBSribo727_trp_                                      0.744259   0.317286   2.346  0.01945 *  
+PromoteurJ23114:RBSribo727_trp_                                            NA         NA      NA       NA    
+PromoteurPDummy:RBSribo727_trp_                                            NA         NA      NA       NA    
+PromoteurPP1:RBSribo727_trp_                                               NA         NA      NA       NA    
+PromoteurJ23111:RBSrpiJ_RBS                                         -0.204608   0.415424  -0.493  0.62260    
+PromoteurJ23114:RBSrpiJ_RBS                                         -0.048914   0.317286  -0.154  0.87755    
+PromoteurPDummy:RBSrpiJ_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrpiJ_RBS                                            -0.146458   0.281244  -0.521  0.60281    
+PromoteurJ23111:RBSrpoB_RBS                                         -0.110594   0.293749  -0.376  0.70674    
+PromoteurJ23114:RBSrpoB_RBS                                         -0.801614   0.305744  -2.622  0.00906 ** 
+PromoteurPDummy:RBSrpoB_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrpoB_RBS                                            -0.092281   0.317286  -0.291  0.77131    
+PromoteurJ23111:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurJ23114:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurPDummy:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurPP1:RBStheoE_riboswitch                                           NA         NA      NA       NA    
+PromoteurJ23111:RBSToxT_5UTR_riboswitch                              0.442639   0.317286   1.395  0.16372    
+PromoteurJ23114:RBSToxT_5UTR_riboswitch                                    NA         NA      NA       NA    
+PromoteurPDummy:RBSToxT_5UTR_riboswitch                                    NA         NA      NA       NA    
+PromoteurPP1:RBSToxT_5UTR_riboswitch                                       NA         NA      NA       NA    
+TerminateurB0015:RBSB0030                                           -0.210211   0.293749  -0.716  0.47463    
+TerminateurB1006:RBSB0030                                           -0.258466   0.293749  -0.880  0.37942    
+TerminateurGluRS_terminator:RBSB0030                                -0.346381   0.293749  -1.179  0.23899    
+TerminateurTDummy:RBSB0030                                                 NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSB0030                                 -0.049685   0.317286  -0.157  0.87564    
+TerminateurB0015:RBSB0032                                           -0.078959   0.293749  -0.269  0.78822    
+TerminateurB1006:RBSB0032                                           -0.127672   0.293749  -0.435  0.66405    
+TerminateurGluRS_terminator:RBSB0032                                -0.125530   0.293749  -0.427  0.66935    
+TerminateurTDummy:RBSB0032                                                 NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSB0032                                 -0.327587   0.317286  -1.032  0.30244    
+TerminateurB0015:RBSmetH_RBS                                        -0.217704   0.293749  -0.741  0.45903    
+TerminateurB1006:RBSmetH_RBS                                        -0.110862   0.293749  -0.377  0.70606    
+TerminateurGluRS_terminator:RBSmetH_RBS                             -0.269438   0.293749  -0.917  0.35954    
+TerminateurTDummy:RBSmetH_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSmetH_RBS                              -0.182025   0.317286  -0.574  0.56648    
+TerminateurB0015:RBSnudC_RBS                                        -0.094531   0.293749  -0.322  0.74776    
+TerminateurB1006:RBSnudC_RBS                                        -0.216360   0.293749  -0.737  0.46181    
+TerminateurGluRS_terminator:RBSnudC_RBS                             -0.124788   0.293749  -0.425  0.67119    
+TerminateurTDummy:RBSnudC_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSnudC_RBS                               0.244838   0.317286   0.772  0.44074    
+TerminateurB0015:RBSpilO_RBS                                        -0.135642   0.293749  -0.462  0.64449    
+TerminateurB1006:RBSpilO_RBS                                        -0.172542   0.293749  -0.587  0.55726    
+TerminateurGluRS_terminator:RBSpilO_RBS                             -0.184014   0.293749  -0.626  0.53137    
+TerminateurTDummy:RBSpilO_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSpilO_RBS                              -0.097995   0.317286  -0.309  0.75759    
+TerminateurB0015:RBSrapA_RBS                                        -0.165629   0.293749  -0.564  0.57316    
+TerminateurB1006:RBSrapA_RBS                                        -0.159070   0.293749  -0.542  0.58844    
+TerminateurGluRS_terminator:RBSrapA_RBS                             -0.249768   0.293749  -0.850  0.39565    
+TerminateurTDummy:RBSrapA_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrapA_RBS                               0.171149   0.448710   0.381  0.70308    
+TerminateurB0015:RBSRDummy                                                 NA         NA      NA       NA    
+TerminateurB1006:RBSRDummy                                                 NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSRDummy                                      NA         NA      NA       NA    
+TerminateurTDummy:RBSRDummy                                                NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSRDummy                                       NA         NA      NA       NA    
+TerminateurB0015:RBSribo727_trp_                                           NA         NA      NA       NA    
+TerminateurB1006:RBSribo727_trp_                                           NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSribo727_trp_                                NA         NA      NA       NA    
+TerminateurTDummy:RBSribo727_trp_                                          NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSribo727_trp_                                 NA         NA      NA       NA    
+TerminateurB0015:RBSrpiJ_RBS                                        -0.110783   0.293749  -0.377  0.70626    
+TerminateurB1006:RBSrpiJ_RBS                                        -0.119017   0.293749  -0.405  0.68556    
+TerminateurGluRS_terminator:RBSrpiJ_RBS                             -0.066346   0.293749  -0.226  0.82142    
+TerminateurTDummy:RBSrpiJ_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrpiJ_RBS                              -0.101661   0.317286  -0.320  0.74882    
+TerminateurB0015:RBSrpoB_RBS                                        -0.213528   0.293749  -0.727  0.46769    
+TerminateurB1006:RBSrpoB_RBS                                        -0.083315   0.293749  -0.284  0.77684    
+TerminateurGluRS_terminator:RBSrpoB_RBS                             -0.183841   0.293749  -0.626  0.53176    
+TerminateurTDummy:RBSrpoB_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrpoB_RBS                              -0.108700   0.317286  -0.343  0.73207    
+TerminateurB0015:RBStheoE_riboswitch                                       NA         NA      NA       NA    
+TerminateurB1006:RBStheoE_riboswitch                                       NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBStheoE_riboswitch                            NA         NA      NA       NA    
+TerminateurTDummy:RBStheoE_riboswitch                                      NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBStheoE_riboswitch                             NA         NA      NA       NA    
+TerminateurB0015:RBSToxT_5UTR_riboswitch                                   NA         NA      NA       NA    
+TerminateurB1006:RBSToxT_5UTR_riboswitch                                   NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch                        NA         NA      NA       NA    
+TerminateurTDummy:RBSToxT_5UTR_riboswitch                                  NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSB0030                            0.813070   0.508789   1.598  0.11078    
+PromoteurJ23114:TerminateurB0015:RBSB0030                            0.237917   0.423991   0.561  0.57500    
+PromoteurPDummy:TerminateurB0015:RBSB0030                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSB0030                               0.560546   0.432387   1.296  0.19555    
+PromoteurJ23111:TerminateurB1006:RBSB0030                            1.389411   0.508789   2.731  0.00658 ** 
+PromoteurJ23114:TerminateurB1006:RBSB0030                            0.148413   0.406678   0.365  0.71534    
+PromoteurPDummy:TerminateurB1006:RBSB0030                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSB0030                               0.309595   0.448710   0.690  0.49059    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSB0030                 1.308358   0.415424   3.149  0.00175 ** 
+PromoteurJ23114:TerminateurGluRS_terminator:RBSB0030                -0.263480   0.432387  -0.609  0.54261    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSB0030                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSB0030                    0.799544   0.448710   1.782  0.07549 .  
+PromoteurJ23111:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSB0030                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSB0030                           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSB0032                            0.090176   0.508789   0.177  0.85941    
+PromoteurJ23114:TerminateurB0015:RBSB0032                            0.044298   0.423991   0.104  0.91684    
+PromoteurPDummy:TerminateurB0015:RBSB0032                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSB0032                              -0.699684   0.432387  -1.618  0.10637    
+PromoteurJ23111:TerminateurB1006:RBSB0032                            0.101464   0.508789   0.199  0.84203    
+PromoteurJ23114:TerminateurB1006:RBSB0032                            0.148783   0.406678   0.366  0.71466    
+PromoteurPDummy:TerminateurB1006:RBSB0032                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSB0032                               0.083005   0.448710   0.185  0.85333    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSB0032                -0.168093   0.415424  -0.405  0.68596    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSB0032                -0.514985   0.432387  -1.191  0.23431    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSB0032                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSB0032                    0.207742   0.448710   0.463  0.64362    
+PromoteurJ23111:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSB0032                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSB0032                  0.411454   0.448710   0.917  0.35968    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSB0032                  0.292629   0.448710   0.652  0.51465    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSB0032                        NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSB0032                           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSmetH_RBS                         0.682862   0.508789   1.342  0.18027    
+PromoteurJ23114:TerminateurB0015:RBSmetH_RBS                         0.332836   0.423991   0.785  0.43289    
+PromoteurPDummy:TerminateurB0015:RBSmetH_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSmetH_RBS                            1.340488   0.432387   3.100  0.00206 ** 
+PromoteurJ23111:TerminateurB1006:RBSmetH_RBS                         0.106810   0.508789   0.210  0.83382    
+PromoteurJ23114:TerminateurB1006:RBSmetH_RBS                         0.192617   0.406678   0.474  0.63600    
+PromoteurPDummy:TerminateurB1006:RBSmetH_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSmetH_RBS                            0.886533   0.448710   1.976  0.04883 *  
+PromoteurJ23111:TerminateurGluRS_terminator:RBSmetH_RBS              0.037808   0.415424   0.091  0.92753    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSmetH_RBS             -0.295739   0.432387  -0.684  0.49437    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSmetH_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSmetH_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSmetH_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSmetH_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSmetH_RBS               0.415940   0.448710   0.927  0.35447    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSmetH_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSmetH_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSnudC_RBS                         0.588730   0.508789   1.157  0.24788    
+PromoteurJ23114:TerminateurB0015:RBSnudC_RBS                         0.151162   0.423991   0.357  0.72163    
+PromoteurPDummy:TerminateurB0015:RBSnudC_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSnudC_RBS                                  NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSnudC_RBS                        -0.290381   0.508789  -0.571  0.56849    
+PromoteurJ23114:TerminateurB1006:RBSnudC_RBS                         0.178138   0.406678   0.438  0.66159    
+PromoteurPDummy:TerminateurB1006:RBSnudC_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSnudC_RBS                            0.104952   0.448710   0.234  0.81518    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSnudC_RBS              0.028458   0.440624   0.065  0.94853    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSnudC_RBS             -0.441658   0.440624  -1.002  0.31675    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSnudC_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSnudC_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSnudC_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSnudC_RBS              -0.096044   0.448710  -0.214  0.83062    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSnudC_RBS              -0.364914   0.448710  -0.813  0.41653    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSnudC_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSnudC_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSpilO_RBS                         0.555660   0.508789   1.092  0.27540    
+PromoteurJ23114:TerminateurB0015:RBSpilO_RBS                        -1.190037   0.432387  -2.752  0.00617 ** 
+PromoteurPDummy:TerminateurB0015:RBSpilO_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSpilO_RBS                            0.857382   0.423991   2.022  0.04379 *  
+PromoteurJ23111:TerminateurB1006:RBSpilO_RBS                         0.022396   0.508789   0.044  0.96491    
+PromoteurJ23114:TerminateurB1006:RBSpilO_RBS                        -0.406247   0.415424  -0.978  0.32868    
+PromoteurPDummy:TerminateurB1006:RBSpilO_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSpilO_RBS                            0.248418   0.427369   0.581  0.56137    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSpilO_RBS             -0.140828   0.415424  -0.339  0.73478    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSpilO_RBS             -1.067900   0.440624  -2.424  0.01579 *  
+PromoteurPDummy:TerminateurGluRS_terminator:RBSpilO_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSpilO_RBS                 0.709661   0.432387   1.641  0.10149    
+PromoteurJ23111:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSpilO_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSpilO_RBS               0.324177   0.448710   0.722  0.47041    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSpilO_RBS              -0.409937   0.456652  -0.898  0.36986    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSpilO_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSpilO_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrapA_RBS                         0.603143   0.508789   1.185  0.23651    
+PromoteurJ23114:TerminateurB0015:RBSrapA_RBS                        -0.424694   0.599613  -0.708  0.47916    
+PromoteurPDummy:TerminateurB0015:RBSrapA_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrapA_RBS                            0.553001   0.432387   1.279  0.20162    
+PromoteurJ23111:TerminateurB1006:RBSrapA_RBS                         0.293042   0.508789   0.576  0.56495    
+PromoteurJ23114:TerminateurB1006:RBSrapA_RBS                        -0.445104   0.587499  -0.758  0.44910    
+PromoteurPDummy:TerminateurB1006:RBSrapA_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrapA_RBS                            0.594085   0.448710   1.324  0.18622    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrapA_RBS             -0.022896   0.415424  -0.055  0.95607    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrapA_RBS                    NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrapA_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrapA_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrapA_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrapA_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSRDummy                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSRDummy                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSRDummy                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSRDummy                                   NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSRDummy                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSribo727_trp_                              NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSribo727_trp_                              NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSribo727_trp_                   NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSribo727_trp_                             NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSribo727_trp_                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrpiJ_RBS                         0.601432   0.508789   1.182  0.23784    
+PromoteurJ23114:TerminateurB0015:RBSrpiJ_RBS                        -0.315224   0.464459  -0.679  0.49770    
+PromoteurPDummy:TerminateurB0015:RBSrpiJ_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrpiJ_RBS                            0.197521   0.415424   0.475  0.63470    
+PromoteurJ23111:TerminateurB1006:RBSrpiJ_RBS                         0.154320   0.508789   0.303  0.76180    
+PromoteurJ23114:TerminateurB1006:RBSrpiJ_RBS                        -0.256089   0.494454  -0.518  0.60478    
+PromoteurPDummy:TerminateurB1006:RBSrpiJ_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrpiJ_RBS                            0.162359   0.440624   0.368  0.71270    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrpiJ_RBS             -0.066969   0.415424  -0.161  0.87201    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrpiJ_RBS             -1.153387   0.542973  -2.124  0.03423 *  
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrpiJ_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrpiJ_RBS                 0.231614   0.440624   0.526  0.59941    
+PromoteurJ23111:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrpiJ_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrpiJ_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrpoB_RBS                         0.738022   0.415424   1.777  0.07636 .  
+PromoteurJ23114:TerminateurB0015:RBSrpoB_RBS                        -0.077045   0.501673  -0.154  0.87802    
+PromoteurPDummy:TerminateurB0015:RBSrpoB_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrpoB_RBS                            0.363819   0.448710   0.811  0.41793    
+PromoteurJ23111:TerminateurB1006:RBSrpoB_RBS                         0.043215   0.415424   0.104  0.91720    
+PromoteurJ23114:TerminateurB1006:RBSrpoB_RBS                         0.587534   0.423991   1.386  0.16656    
+PromoteurPDummy:TerminateurB1006:RBSrpoB_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrpoB_RBS                            0.165378   0.464459   0.356  0.72197    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrpoB_RBS                 0.038204   0.464459   0.082  0.93448    
+PromoteurJ23111:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrpoB_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrpoB_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrpoB_RBS               0.990148   0.456652   2.168  0.03069 *  
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrpoB_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrpoB_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBStheoE_riboswitch                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBStheoE_riboswitch                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBStheoE_riboswitch               NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBStheoE_riboswitch                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBStheoE_riboswitch                NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSToxT_5UTR_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSToxT_5UTR_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSToxT_5UTR_riboswitch                     NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch            NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2937 on 423 degrees of freedom
+Multiple R-squared:  0.9777,	Adjusted R-squared:  0.9691 
+F-statistic: 113.2 on 164 and 423 DF,  p-value: < 2.2e-16
+
+
+Response Scarlet_rate :
+
+Call:
+lm(formula = Scarlet_rate ~ Promoteur + Terminateur + RBS + Promoteur * 
+    Terminateur * RBS - 1, data = rawdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.8096 -0.1801 -0.0076  0.1730  4.9586 
+
+Coefficients: (226 not defined because of singularities)
+                                                                     Estimate Std. Error t value Pr(>|t|)    
+PromoteurJ23106                                                      0.716477   0.345356   2.075 0.038627 *  
+PromoteurJ23111                                                      0.941554   0.913725   1.030 0.303385    
+PromoteurJ23114                                                      0.258798   0.345356   0.749 0.454052    
+PromoteurPDummy                                                      1.110811   0.845945   1.313 0.189861    
+PromoteurPP1                                                         1.839207   0.281982   6.522 1.98e-10 ***
+TerminateurB0015                                                     0.018749   0.488407   0.038 0.969397    
+TerminateurB1006                                                     0.251543   0.488407   0.515 0.606803    
+TerminateurGluRS_terminator                                          1.459911   0.488407   2.989 0.002961 ** 
+TerminateurTDummy                                                   -0.587766   0.527539  -1.114 0.265841    
+TerminateurtRNA_terminator                                          -0.478378   0.527539  -0.907 0.365024    
+RBSB0030                                                             0.967275   0.488407   1.980 0.048298 *  
+RBSB0032                                                             0.995423   0.488407   2.038 0.042161 *  
+RBSmetH_RBS                                                          0.881411   0.488407   1.805 0.071838 .  
+RBSnudC_RBS                                                          0.135522   0.488407   0.277 0.781550    
+RBSpilO_RBS                                                          0.867021   0.488407   1.775 0.076584 .  
+RBSrapA_RBS                                                          1.136661   0.488407   2.327 0.020421 *  
+RBSRDummy                                                           -0.130197   0.527539  -0.247 0.805183    
+RBSribo727_trp_                                                      0.049576   0.527539   0.094 0.925173    
+RBSrpiJ_RBS                                                          1.064489   0.488407   2.180 0.029844 *  
+RBSrpoB_RBS                                                          0.291894   0.488407   0.598 0.550397    
+RBStheoE_riboswitch                                                 -0.098318   0.527539  -0.186 0.852243    
+RBSToxT_5UTR_riboswitch                                              0.374003   0.527539   0.709 0.478741    
+PromoteurJ23111:TerminateurB0015                                     0.500401   0.976813   0.512 0.608723    
+PromoteurJ23114:TerminateurB0015                                     1.205628   0.718915   1.677 0.094279 .  
+PromoteurPDummy:TerminateurB0015                                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015                                       -0.201545   0.690711  -0.292 0.770588    
+PromoteurJ23111:TerminateurB1006                                     0.633372   0.976813   0.648 0.517074    
+PromoteurJ23114:TerminateurB1006                                    -0.073525   0.661306  -0.111 0.911525    
+PromoteurPDummy:TerminateurB1006                                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006                                       -0.019366   0.746054  -0.026 0.979303    
+PromoteurJ23111:TerminateurGluRS_terminator                         -1.424709   0.690711  -2.063 0.039754 *  
+PromoteurJ23114:TerminateurGluRS_terminator                         -1.855589   0.746054  -2.487 0.013260 *  
+PromoteurPDummy:TerminateurGluRS_terminator                                NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator                            -1.670713   0.746054  -2.239 0.025649 *  
+PromoteurJ23111:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy                                             NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator                           0.992860   0.746054   1.331 0.183967    
+PromoteurJ23114:TerminateurtRNA_terminator                           3.029181   0.746054   4.060 5.84e-05 ***
+PromoteurPDummy:TerminateurtRNA_terminator                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator                                    NA         NA      NA       NA    
+PromoteurJ23111:RBSB0030                                            -1.565593   0.976813  -1.603 0.109735    
+PromoteurJ23114:RBSB0030                                             0.693480   0.690711   1.004 0.315949    
+PromoteurPDummy:RBSB0030                                                   NA         NA      NA       NA    
+PromoteurPP1:RBSB0030                                               -1.256092   0.690711  -1.819 0.069687 .  
+PromoteurJ23111:RBSB0032                                            -0.410250   0.976813  -0.420 0.674708    
+PromoteurJ23114:RBSB0032                                             0.656941   0.690711   0.951 0.342092    
+PromoteurPDummy:RBSB0032                                                   NA         NA      NA       NA    
+PromoteurPP1:RBSB0032                                               -1.097188   0.690711  -1.588 0.112923    
+PromoteurJ23111:RBSmetH_RBS                                         -0.359222   0.976813  -0.368 0.713244    
+PromoteurJ23114:RBSmetH_RBS                                         -0.098885   0.690711  -0.143 0.886229    
+PromoteurPDummy:RBSmetH_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSmetH_RBS                                            -1.772579   0.690711  -2.566 0.010622 *  
+PromoteurJ23111:RBSnudC_RBS                                         -0.321221   0.976813  -0.329 0.742435    
+PromoteurJ23114:RBSnudC_RBS                                          0.608714   0.690711   0.881 0.378664    
+PromoteurPDummy:RBSnudC_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSnudC_RBS                                            -1.730110   0.690711  -2.505 0.012626 *  
+PromoteurJ23111:RBSpilO_RBS                                         -0.506345   0.976813  -0.518 0.604475    
+PromoteurJ23114:RBSpilO_RBS                                          0.417866   0.718915   0.581 0.561384    
+PromoteurPDummy:RBSpilO_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSpilO_RBS                                            -0.773471   0.661306  -1.170 0.242816    
+PromoteurJ23111:RBSrapA_RBS                                         -0.453251   0.976813  -0.464 0.642879    
+PromoteurJ23114:RBSrapA_RBS                                         -1.278140   1.196347  -1.068 0.285964    
+PromoteurPDummy:RBSrapA_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrapA_RBS                                            -1.318340   0.690711  -1.909 0.056981 .  
+PromoteurJ23111:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurJ23114:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurPDummy:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurPP1:RBSRDummy                                                     NA         NA      NA       NA    
+PromoteurJ23111:RBSribo727_trp_                                     -0.757243   0.746054  -1.015 0.310687    
+PromoteurJ23114:RBSribo727_trp_                                            NA         NA      NA       NA    
+PromoteurPDummy:RBSribo727_trp_                                            NA         NA      NA       NA    
+PromoteurPP1:RBSribo727_trp_                                               NA         NA      NA       NA    
+PromoteurJ23111:RBSrpiJ_RBS                                         -0.426794   0.976813  -0.437 0.662389    
+PromoteurJ23114:RBSrpiJ_RBS                                         -2.619124   0.746054  -3.511 0.000495 ***
+PromoteurPDummy:RBSrpiJ_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrpiJ_RBS                                            -1.437064   0.661306  -2.173 0.030329 *  
+PromoteurJ23111:RBSrpoB_RBS                                         -0.266324   0.690711  -0.386 0.700002    
+PromoteurJ23114:RBSrpoB_RBS                                          1.313080   0.718915   1.826 0.068484 .  
+PromoteurPDummy:RBSrpoB_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrpoB_RBS                                            -0.610072   0.746054  -0.818 0.413970    
+PromoteurJ23111:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurJ23114:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurPDummy:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurPP1:RBStheoE_riboswitch                                           NA         NA      NA       NA    
+PromoteurJ23111:RBSToxT_5UTR_riboswitch                             -1.735567   0.746054  -2.326 0.020473 *  
+PromoteurJ23114:RBSToxT_5UTR_riboswitch                                    NA         NA      NA       NA    
+PromoteurPDummy:RBSToxT_5UTR_riboswitch                                    NA         NA      NA       NA    
+PromoteurPP1:RBSToxT_5UTR_riboswitch                                       NA         NA      NA       NA    
+TerminateurB0015:RBSB0030                                           -0.061260   0.690711  -0.089 0.929369    
+TerminateurB1006:RBSB0030                                           -0.350220   0.690711  -0.507 0.612389    
+TerminateurGluRS_terminator:RBSB0030                                -1.535940   0.690711  -2.224 0.026696 *  
+TerminateurTDummy:RBSB0030                                                 NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSB0030                                 -3.206225   0.746054  -4.298 2.14e-05 ***
+TerminateurB0015:RBSB0032                                            0.074343   0.690711   0.108 0.914338    
+TerminateurB1006:RBSB0032                                           -0.229493   0.690711  -0.332 0.739861    
+TerminateurGluRS_terminator:RBSB0032                                -1.311469   0.690711  -1.899 0.058281 .  
+TerminateurTDummy:RBSB0032                                                 NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSB0032                                 -0.543954   0.746054  -0.729 0.466338    
+TerminateurB0015:RBSmetH_RBS                                        -0.183631   0.690711  -0.266 0.790479    
+TerminateurB1006:RBSmetH_RBS                                        -0.211033   0.690711  -0.306 0.760113    
+TerminateurGluRS_terminator:RBSmetH_RBS                             -1.389279   0.690711  -2.011 0.044920 *  
+TerminateurTDummy:RBSmetH_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSmetH_RBS                              -0.743915   0.746054  -0.997 0.319270    
+TerminateurB0015:RBSnudC_RBS                                        -0.090818   0.690711  -0.131 0.895454    
+TerminateurB1006:RBSnudC_RBS                                        -0.318842   0.690711  -0.462 0.644595    
+TerminateurGluRS_terminator:RBSnudC_RBS                             -1.368007   0.690711  -1.981 0.048286 *  
+TerminateurTDummy:RBSnudC_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSnudC_RBS                              -0.078032   0.746054  -0.105 0.916749    
+TerminateurB0015:RBSpilO_RBS                                        -0.070679   0.690711  -0.102 0.918545    
+TerminateurB1006:RBSpilO_RBS                                        -0.329284   0.690711  -0.477 0.633800    
+TerminateurGluRS_terminator:RBSpilO_RBS                             -1.435258   0.690711  -2.078 0.038317 *  
+TerminateurTDummy:RBSpilO_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSpilO_RBS                              -0.402799   0.746054  -0.540 0.589546    
+TerminateurB0015:RBSrapA_RBS                                         0.008622   0.690711   0.012 0.990047    
+TerminateurB1006:RBSrapA_RBS                                        -0.299487   0.690711  -0.434 0.664806    
+TerminateurGluRS_terminator:RBSrapA_RBS                             -1.426931   0.690711  -2.066 0.039448 *  
+TerminateurTDummy:RBSrapA_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrapA_RBS                              -1.182385   1.055079  -1.121 0.263069    
+TerminateurB0015:RBSRDummy                                                 NA         NA      NA       NA    
+TerminateurB1006:RBSRDummy                                                 NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSRDummy                                      NA         NA      NA       NA    
+TerminateurTDummy:RBSRDummy                                                NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSRDummy                                       NA         NA      NA       NA    
+TerminateurB0015:RBSribo727_trp_                                           NA         NA      NA       NA    
+TerminateurB1006:RBSribo727_trp_                                           NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSribo727_trp_                                NA         NA      NA       NA    
+TerminateurTDummy:RBSribo727_trp_                                          NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSribo727_trp_                                 NA         NA      NA       NA    
+TerminateurB0015:RBSrpiJ_RBS                                         0.061908   0.690711   0.090 0.928624    
+TerminateurB1006:RBSrpiJ_RBS                                        -0.116947   0.690711  -0.169 0.865630    
+TerminateurGluRS_terminator:RBSrpiJ_RBS                             -1.288860   0.690711  -1.866 0.062735 .  
+TerminateurTDummy:RBSrpiJ_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrpiJ_RBS                              -0.520655   0.746054  -0.698 0.485636    
+TerminateurB0015:RBSrpoB_RBS                                        -0.382520   0.690711  -0.554 0.580004    
+TerminateurB1006:RBSrpoB_RBS                                         0.094780   0.690711   0.137 0.890921    
+TerminateurGluRS_terminator:RBSrpoB_RBS                              0.161345   0.690711   0.234 0.815414    
+TerminateurTDummy:RBSrpoB_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrpoB_RBS                              -0.487865   0.746054  -0.654 0.513513    
+TerminateurB0015:RBStheoE_riboswitch                                       NA         NA      NA       NA    
+TerminateurB1006:RBStheoE_riboswitch                                       NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBStheoE_riboswitch                            NA         NA      NA       NA    
+TerminateurTDummy:RBStheoE_riboswitch                                      NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBStheoE_riboswitch                             NA         NA      NA       NA    
+TerminateurB0015:RBSToxT_5UTR_riboswitch                                   NA         NA      NA       NA    
+TerminateurB1006:RBSToxT_5UTR_riboswitch                                   NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch                        NA         NA      NA       NA    
+TerminateurTDummy:RBSToxT_5UTR_riboswitch                                  NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSB0030                           -0.068849   1.196347  -0.058 0.954134    
+PromoteurJ23114:TerminateurB0015:RBSB0030                           -1.288310   0.996956  -1.292 0.196978    
+PromoteurPDummy:TerminateurB0015:RBSB0030                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSB0030                               0.240743   1.016700   0.237 0.812936    
+PromoteurJ23111:TerminateurB1006:RBSB0030                            0.593842   1.196347   0.496 0.619885    
+PromoteurJ23114:TerminateurB1006:RBSB0030                           -0.182054   0.956247  -0.190 0.849099    
+PromoteurPDummy:TerminateurB1006:RBSB0030                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSB0030                               0.055255   1.055079   0.052 0.958258    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSB0030                 2.613427   0.976813   2.675 0.007752 ** 
+PromoteurJ23114:TerminateurGluRS_terminator:RBSB0030                 1.792690   1.016700   1.763 0.078581 .  
+PromoteurPDummy:TerminateurGluRS_terminator:RBSB0030                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSB0030                    1.961715   1.055079   1.859 0.063678 .  
+PromoteurJ23111:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSB0030                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSB0030                           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSB0032                           -0.273453   1.196347  -0.229 0.819311    
+PromoteurJ23114:TerminateurB0015:RBSB0032                           -1.261984   0.996956  -1.266 0.206268    
+PromoteurPDummy:TerminateurB0015:RBSB0032                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSB0032                              -1.114102   1.016700  -1.096 0.273789    
+PromoteurJ23111:TerminateurB1006:RBSB0032                           -0.712674   1.196347  -0.596 0.551689    
+PromoteurJ23114:TerminateurB1006:RBSB0032                            0.166860   0.956247   0.174 0.861560    
+PromoteurPDummy:TerminateurB1006:RBSB0032                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSB0032                              -0.205706   1.055079  -0.195 0.845512    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSB0032                 1.376626   0.976813   1.409 0.159480    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSB0032                 1.703423   1.016700   1.675 0.094586 .  
+PromoteurPDummy:TerminateurGluRS_terminator:RBSB0032                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSB0032                    1.396480   1.055079   1.324 0.186358    
+PromoteurJ23111:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSB0032                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSB0032                 -0.396908   1.055079  -0.376 0.706966    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSB0032                 -3.375138   1.055079  -3.199 0.001483 ** 
+PromoteurPDummy:TerminateurtRNA_terminator:RBSB0032                        NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSB0032                           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSmetH_RBS                        -0.398407   1.196347  -0.333 0.739285    
+PromoteurJ23114:TerminateurB0015:RBSmetH_RBS                        -0.836386   0.996956  -0.839 0.401977    
+PromoteurPDummy:TerminateurB0015:RBSmetH_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSmetH_RBS                            1.225115   1.016700   1.205 0.228880    
+PromoteurJ23111:TerminateurB1006:RBSmetH_RBS                        -0.631809   1.196347  -0.528 0.597696    
+PromoteurJ23114:TerminateurB1006:RBSmetH_RBS                         0.387549   0.956247   0.405 0.685475    
+PromoteurPDummy:TerminateurB1006:RBSmetH_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSmetH_RBS                            0.524137   1.055079   0.497 0.619605    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSmetH_RBS              1.205699   0.976813   1.234 0.217769    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSmetH_RBS              2.058627   1.016700   2.025 0.043514 *  
+PromoteurPDummy:TerminateurGluRS_terminator:RBSmetH_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSmetH_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSmetH_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSmetH_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSmetH_RBS              -1.619929   1.055079  -1.535 0.125442    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSmetH_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSmetH_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSnudC_RBS                        -0.488132   1.196347  -0.408 0.683466    
+PromoteurJ23114:TerminateurB0015:RBSnudC_RBS                        -1.301394   0.996956  -1.305 0.192477    
+PromoteurPDummy:TerminateurB0015:RBSnudC_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSnudC_RBS                                  NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSnudC_RBS                        -0.107900   1.196347  -0.090 0.928178    
+PromoteurJ23114:TerminateurB1006:RBSnudC_RBS                         0.159860   0.956247   0.167 0.867312    
+PromoteurPDummy:TerminateurB1006:RBSnudC_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSnudC_RBS                            0.664471   1.055079   0.630 0.529176    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSnudC_RBS              1.142975   1.036067   1.103 0.270573    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSnudC_RBS              1.819998   1.036067   1.757 0.079702 .  
+PromoteurPDummy:TerminateurGluRS_terminator:RBSnudC_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSnudC_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSnudC_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSnudC_RBS              -1.107107   1.055079  -1.049 0.294634    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSnudC_RBS              -3.116926   1.055079  -2.954 0.003310 ** 
+PromoteurPDummy:TerminateurtRNA_terminator:RBSnudC_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSnudC_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSpilO_RBS                        -0.478232   1.196347  -0.400 0.689548    
+PromoteurJ23114:TerminateurB0015:RBSpilO_RBS                        -1.364004   1.016700  -1.342 0.180446    
+PromoteurPDummy:TerminateurB0015:RBSpilO_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSpilO_RBS                            2.497444   0.996956   2.505 0.012618 *  
+PromoteurJ23111:TerminateurB1006:RBSpilO_RBS                        -0.642316   1.196347  -0.537 0.591620    
+PromoteurJ23114:TerminateurB1006:RBSpilO_RBS                         0.250771   0.976813   0.257 0.797517    
+PromoteurPDummy:TerminateurB1006:RBSpilO_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSpilO_RBS                           -1.604944   1.004900  -1.597 0.110986    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSpilO_RBS              1.375430   0.976813   1.408 0.159842    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSpilO_RBS              1.652051   1.036067   1.595 0.111562    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSpilO_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSpilO_RBS                 1.486224   1.016700   1.462 0.144535    
+PromoteurJ23111:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSpilO_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSpilO_RBS              -0.926269   1.055079  -0.878 0.380488    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSpilO_RBS              -3.189161   1.073754  -2.970 0.003147 ** 
+PromoteurPDummy:TerminateurtRNA_terminator:RBSpilO_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSpilO_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrapA_RBS                        -0.537872   1.196347  -0.450 0.653233    
+PromoteurJ23114:TerminateurB0015:RBSrapA_RBS                         0.050190   1.409909   0.036 0.971620    
+PromoteurPDummy:TerminateurB0015:RBSrapA_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrapA_RBS                            0.219383   1.016700   0.216 0.829264    
+PromoteurJ23111:TerminateurB1006:RBSrapA_RBS                        -0.058056   1.196347  -0.049 0.961318    
+PromoteurJ23114:TerminateurB1006:RBSrapA_RBS                         1.231859   1.381423   0.892 0.373043    
+PromoteurPDummy:TerminateurB1006:RBSrapA_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrapA_RBS                           -0.070798   1.055079  -0.067 0.946532    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrapA_RBS              1.312037   0.976813   1.343 0.179934    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrapA_RBS                    NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrapA_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrapA_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrapA_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrapA_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSRDummy                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSRDummy                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSRDummy                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSRDummy                                   NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSRDummy                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSribo727_trp_                              NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSribo727_trp_                              NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSribo727_trp_                   NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSribo727_trp_                             NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSribo727_trp_                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrpiJ_RBS                        -0.677521   1.196347  -0.566 0.571473    
+PromoteurJ23114:TerminateurB0015:RBSrpiJ_RBS                         1.700535   1.092111   1.557 0.120192    
+PromoteurPDummy:TerminateurB0015:RBSrpiJ_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrpiJ_RBS                           -0.413080   0.976813  -0.423 0.672594    
+PromoteurJ23111:TerminateurB1006:RBSrpiJ_RBS                        -0.821004   1.196347  -0.686 0.492926    
+PromoteurJ23114:TerminateurB1006:RBSrpiJ_RBS                         3.152080   1.162640   2.711 0.006978 ** 
+PromoteurPDummy:TerminateurB1006:RBSrpiJ_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrpiJ_RBS                            0.406855   1.036067   0.393 0.694745    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrpiJ_RBS              1.265279   0.976813   1.295 0.195919    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrpiJ_RBS              4.405395   1.276727   3.451 0.000616 ***
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrpiJ_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrpiJ_RBS                 1.491689   1.036067   1.440 0.150675    
+PromoteurJ23111:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrpiJ_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrpiJ_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrpoB_RBS                         0.071439   0.976813   0.073 0.941733    
+PromoteurJ23114:TerminateurB0015:RBSrpoB_RBS                        -1.518435   1.179614  -1.287 0.198718    
+PromoteurPDummy:TerminateurB0015:RBSrpoB_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrpoB_RBS                            0.683138   1.055079   0.647 0.517676    
+PromoteurJ23111:TerminateurB1006:RBSrpoB_RBS                        -0.937189   0.976813  -0.959 0.337888    
+PromoteurJ23114:TerminateurB1006:RBSrpoB_RBS                        -0.331012   0.996956  -0.332 0.740037    
+PromoteurPDummy:TerminateurB1006:RBSrpoB_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrpoB_RBS                            0.078584   1.092111   0.072 0.942671    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrpoB_RBS                 0.295674   1.092111   0.271 0.786726    
+PromoteurJ23111:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrpoB_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrpoB_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrpoB_RBS              -3.478270   1.073754  -3.239 0.001293 ** 
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrpoB_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrpoB_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBStheoE_riboswitch                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBStheoE_riboswitch                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBStheoE_riboswitch               NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBStheoE_riboswitch                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBStheoE_riboswitch                NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSToxT_5UTR_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSToxT_5UTR_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSToxT_5UTR_riboswitch                     NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch            NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6907 on 423 degrees of freedom
+Multiple R-squared:  0.8594,	Adjusted R-squared:  0.8049 
+F-statistic: 15.76 on 164 and 423 DF,  p-value: < 2.2e-16
+
+
+Response ratio_scarletGR :
+
+Call:
+lm(formula = ratio_scarletGR ~ Promoteur + Terminateur + RBS + 
+    Promoteur * Terminateur * RBS - 1, data = rawdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.721  -0.133  -0.003   0.103  36.872 
+
+Coefficients: (226 not defined because of singularities)
+                                                                     Estimate Std. Error t value Pr(>|t|)    
+PromoteurJ23106                                                      0.423771   1.058875   0.400 0.689205    
+PromoteurJ23111                                                      0.595643   2.801519   0.213 0.831730    
+PromoteurJ23114                                                      0.140043   1.058875   0.132 0.894844    
+PromoteurPDummy                                                      0.563937   2.593703   0.217 0.827982    
+PromoteurPP1                                                         1.323795   0.864568   1.531 0.126476    
+TerminateurB0015                                                    -0.039224   1.497475  -0.026 0.979115    
+TerminateurB1006                                                     0.109540   1.497475   0.073 0.941722    
+TerminateurGluRS_terminator                                          0.785197   1.497475   0.524 0.600312    
+TerminateurTDummy                                                   -0.373836   1.617458  -0.231 0.817329    
+TerminateurtRNA_terminator                                          -0.287076   1.617458  -0.177 0.859212    
+RBSB0030                                                             0.518278   1.497475   0.346 0.729439    
+RBSB0032                                                             0.566310   1.497475   0.378 0.705489    
+RBSmetH_RBS                                                          0.435489   1.497475   0.291 0.771335    
+RBSnudC_RBS                                                          0.065227   1.497475   0.044 0.965277    
+RBSpilO_RBS                                                          0.428402   1.497475   0.286 0.774955    
+RBSrapA_RBS                                                          0.569596   1.497475   0.380 0.703861    
+RBSRDummy                                                            0.012129   1.617458   0.007 0.994020    
+RBSribo727_trp_                                                      0.051564   1.617458   0.032 0.974583    
+RBSrpiJ_RBS                                                          0.572346   1.497475   0.382 0.702500    
+RBSrpoB_RBS                                                          0.086240   1.497475   0.058 0.954102    
+RBStheoE_riboswitch                                                 -0.059206   1.617458  -0.037 0.970818    
+RBSToxT_5UTR_riboswitch                                              0.217758   1.617458   0.135 0.892969    
+PromoteurJ23111:TerminateurB0015                                     0.296779   2.994950   0.099 0.921111    
+PromoteurJ23114:TerminateurB0015                                     0.756318   2.204224   0.343 0.731677    
+PromoteurPDummy:TerminateurB0015                                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015                                        0.076264   2.117750   0.036 0.971290    
+PromoteurJ23111:TerminateurB1006                                     0.325235   2.994950   0.109 0.913576    
+PromoteurJ23114:TerminateurB1006                                    -0.002920   2.027591  -0.001 0.998852    
+PromoteurPDummy:TerminateurB1006                                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006                                        0.234795   2.287431   0.103 0.918293    
+PromoteurJ23111:TerminateurGluRS_terminator                         -0.839578   2.117750  -0.396 0.691974    
+PromoteurJ23114:TerminateurGluRS_terminator                         -1.522784   2.287431  -0.666 0.505954    
+PromoteurPDummy:TerminateurGluRS_terminator                                NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator                            -0.835252   2.287431  -0.365 0.715183    
+PromoteurJ23111:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy                                          NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy                                             NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator                           0.721801   2.287431   0.316 0.752499    
+PromoteurJ23114:TerminateurtRNA_terminator                           1.719361   2.287431   0.752 0.452676    
+PromoteurPDummy:TerminateurtRNA_terminator                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator                                    NA         NA      NA       NA    
+PromoteurJ23111:RBSB0030                                            -0.981814   2.994950  -0.328 0.743208    
+PromoteurJ23114:RBSB0030                                             0.359876   2.117750   0.170 0.865144    
+PromoteurPDummy:RBSB0030                                                   NA         NA      NA       NA    
+PromoteurPP1:RBSB0030                                               -0.281992   2.117750  -0.133 0.894133    
+PromoteurJ23111:RBSB0032                                            -0.205982   2.994950  -0.069 0.945200    
+PromoteurJ23114:RBSB0032                                             0.284223   2.117750   0.134 0.893300    
+PromoteurPDummy:RBSB0032                                                   NA         NA      NA       NA    
+PromoteurPP1:RBSB0032                                               -0.497610   2.117750  -0.235 0.814345    
+PromoteurJ23111:RBSmetH_RBS                                         -0.196248   2.994950  -0.066 0.947786    
+PromoteurJ23114:RBSmetH_RBS                                          0.016256   2.117750   0.008 0.993879    
+PromoteurPDummy:RBSmetH_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSmetH_RBS                                            -0.766633   2.117750  -0.362 0.717530    
+PromoteurJ23111:RBSnudC_RBS                                         -0.229522   2.994950  -0.077 0.938949    
+PromoteurJ23114:RBSnudC_RBS                                          0.318044   2.117750   0.150 0.880694    
+PromoteurPDummy:RBSnudC_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSnudC_RBS                                            -1.096886   2.117750  -0.518 0.604765    
+PromoteurJ23111:RBSpilO_RBS                                         -0.287550   2.994950  -0.096 0.923557    
+PromoteurJ23114:RBSpilO_RBS                                          0.209688   2.204224   0.095 0.924257    
+PromoteurPDummy:RBSpilO_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSpilO_RBS                                            -0.362600   2.027591  -0.179 0.858154    
+PromoteurJ23111:RBSrapA_RBS                                         -0.113087   2.994950  -0.038 0.969898    
+PromoteurJ23114:RBSrapA_RBS                                         -0.600543   3.668050  -0.164 0.870028    
+PromoteurPDummy:RBSrapA_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrapA_RBS                                            -0.200387   2.117750  -0.095 0.924659    
+PromoteurJ23111:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurJ23114:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurPDummy:RBSRDummy                                                  NA         NA      NA       NA    
+PromoteurPP1:RBSRDummy                                                     NA         NA      NA       NA    
+PromoteurJ23111:RBSribo727_trp_                                     -0.522561   2.287431  -0.228 0.819408    
+PromoteurJ23114:RBSribo727_trp_                                            NA         NA      NA       NA    
+PromoteurPDummy:RBSribo727_trp_                                            NA         NA      NA       NA    
+PromoteurPP1:RBSribo727_trp_                                               NA         NA      NA       NA    
+PromoteurJ23111:RBSrpiJ_RBS                                         -0.172358   2.994950  -0.058 0.954135    
+PromoteurJ23114:RBSrpiJ_RBS                                         -1.426614   2.287431  -0.624 0.533177    
+PromoteurPDummy:RBSrpiJ_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrpiJ_RBS                                            -0.836747   2.027591  -0.413 0.680050    
+PromoteurJ23111:RBSrpoB_RBS                                         -0.133642   2.117750  -0.063 0.949712    
+PromoteurJ23114:RBSrpoB_RBS                                          1.385245   2.204224   0.628 0.530048    
+PromoteurPDummy:RBSrpoB_RBS                                                NA         NA      NA       NA    
+PromoteurPP1:RBSrpoB_RBS                                            -0.344086   2.287431  -0.150 0.880501    
+PromoteurJ23111:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurJ23114:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurPDummy:RBStheoE_riboswitch                                        NA         NA      NA       NA    
+PromoteurPP1:RBStheoE_riboswitch                                           NA         NA      NA       NA    
+PromoteurJ23111:RBSToxT_5UTR_riboswitch                             -1.014621   2.287431  -0.444 0.657585    
+PromoteurJ23114:RBSToxT_5UTR_riboswitch                                    NA         NA      NA       NA    
+PromoteurPDummy:RBSToxT_5UTR_riboswitch                                    NA         NA      NA       NA    
+PromoteurPP1:RBSToxT_5UTR_riboswitch                                       NA         NA      NA       NA    
+TerminateurB0015:RBSB0030                                            0.059976   2.117750   0.028 0.977420    
+TerminateurB1006:RBSB0030                                           -0.090749   2.117750  -0.043 0.965840    
+TerminateurGluRS_terminator:RBSB0030                                -0.709215   2.117750  -0.335 0.737873    
+TerminateurTDummy:RBSB0030                                                 NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSB0030                                 -1.754598   2.287431  -0.767 0.443473    
+TerminateurB0015:RBSB0032                                            0.057006   2.117750   0.027 0.978538    
+TerminateurB1006:RBSB0032                                           -0.101302   2.117750  -0.048 0.961871    
+TerminateurGluRS_terminator:RBSB0032                                -0.713180   2.117750  -0.337 0.736463    
+TerminateurTDummy:RBSB0032                                                 NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSB0032                                 -0.233252   2.287431  -0.102 0.918828    
+TerminateurB0015:RBSmetH_RBS                                        -0.003426   2.117750  -0.002 0.998710    
+TerminateurB1006:RBSmetH_RBS                                        -0.096658   2.117750  -0.046 0.963617    
+TerminateurGluRS_terminator:RBSmetH_RBS                             -0.664540   2.117750  -0.314 0.753831    
+TerminateurTDummy:RBSmetH_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSmetH_RBS                              -0.374089   2.287431  -0.164 0.870171    
+TerminateurB0015:RBSnudC_RBS                                        -0.020694   2.117750  -0.010 0.992208    
+TerminateurB1006:RBSnudC_RBS                                        -0.131178   2.117750  -0.062 0.950638    
+TerminateurGluRS_terminator:RBSnudC_RBS                             -0.751190   2.117750  -0.355 0.722982    
+TerminateurTDummy:RBSnudC_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSnudC_RBS                              -0.046725   2.287431  -0.020 0.983713    
+TerminateurB0015:RBSpilO_RBS                                         0.012639   2.117750   0.006 0.995241    
+TerminateurB1006:RBSpilO_RBS                                        -0.131949   2.117750  -0.062 0.950349    
+TerminateurGluRS_terminator:RBSpilO_RBS                             -0.753157   2.117750  -0.356 0.722287    
+TerminateurTDummy:RBSpilO_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSpilO_RBS                              -0.197731   2.287431  -0.086 0.931156    
+TerminateurB0015:RBSrapA_RBS                                         0.073589   2.117750   0.035 0.972297    
+TerminateurB1006:RBSrapA_RBS                                        -0.116268   2.117750  -0.055 0.956243    
+TerminateurGluRS_terminator:RBSrapA_RBS                             -0.700008   2.117750  -0.331 0.741153    
+TerminateurTDummy:RBSrapA_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrapA_RBS                              -0.717090   3.234916  -0.222 0.824676    
+TerminateurB0015:RBSRDummy                                                 NA         NA      NA       NA    
+TerminateurB1006:RBSRDummy                                                 NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSRDummy                                      NA         NA      NA       NA    
+TerminateurTDummy:RBSRDummy                                                NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSRDummy                                       NA         NA      NA       NA    
+TerminateurB0015:RBSribo727_trp_                                           NA         NA      NA       NA    
+TerminateurB1006:RBSribo727_trp_                                           NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSribo727_trp_                                NA         NA      NA       NA    
+TerminateurTDummy:RBSribo727_trp_                                          NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSribo727_trp_                                 NA         NA      NA       NA    
+TerminateurB0015:RBSrpiJ_RBS                                         0.074618   2.117750   0.035 0.971909    
+TerminateurB1006:RBSrpiJ_RBS                                        -0.037597   2.117750  -0.018 0.985844    
+TerminateurGluRS_terminator:RBSrpiJ_RBS                             -0.730468   2.117750  -0.345 0.730321    
+TerminateurTDummy:RBSrpiJ_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrpiJ_RBS                              -0.286604   2.287431  -0.125 0.900349    
+TerminateurB0015:RBSrpoB_RBS                                        -0.116592   2.117750  -0.055 0.956121    
+TerminateurB1006:RBSrpoB_RBS                                         0.106579   2.117750   0.050 0.959886    
+TerminateurGluRS_terminator:RBSrpoB_RBS                              0.196522   2.117750   0.093 0.926108    
+TerminateurTDummy:RBSrpoB_RBS                                              NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSrpoB_RBS                              -0.200064   2.287431  -0.087 0.930345    
+TerminateurB0015:RBStheoE_riboswitch                                       NA         NA      NA       NA    
+TerminateurB1006:RBStheoE_riboswitch                                       NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBStheoE_riboswitch                            NA         NA      NA       NA    
+TerminateurTDummy:RBStheoE_riboswitch                                      NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBStheoE_riboswitch                             NA         NA      NA       NA    
+TerminateurB0015:RBSToxT_5UTR_riboswitch                                   NA         NA      NA       NA    
+TerminateurB1006:RBSToxT_5UTR_riboswitch                                   NA         NA      NA       NA    
+TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch                        NA         NA      NA       NA    
+TerminateurTDummy:RBSToxT_5UTR_riboswitch                                  NA         NA      NA       NA    
+TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSB0030                           12.878339   3.668050   3.511 0.000495 ***
+PromoteurJ23114:TerminateurB0015:RBSB0030                           -0.853076   3.056708  -0.279 0.780317    
+PromoteurPDummy:TerminateurB0015:RBSB0030                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSB0030                              -0.310542   3.117243  -0.100 0.920693    
+PromoteurJ23111:TerminateurB1006:RBSB0030                            0.379811   3.668050   0.104 0.917579    
+PromoteurJ23114:TerminateurB1006:RBSB0030                           -0.134159   2.931892  -0.046 0.963524    
+PromoteurPDummy:TerminateurB1006:RBSB0030                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSB0030                              -0.209699   3.234916  -0.065 0.948345    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSB0030                 1.537478   2.994950   0.513 0.607970    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSB0030                 1.420349   3.117243   0.456 0.648881    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSB0030                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSB0030                    0.486947   3.234916   0.151 0.880419    
+PromoteurJ23111:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSB0030                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSB0030                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSB0030                        NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSB0030                           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSB0032                           -0.544402   3.668050  -0.148 0.882084    
+PromoteurJ23114:TerminateurB0015:RBSB0032                           -0.739602   3.056708  -0.242 0.808928    
+PromoteurPDummy:TerminateurB0015:RBSB0032                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSB0032                              -0.977739   3.117243  -0.314 0.753938    
+PromoteurJ23111:TerminateurB1006:RBSB0032                           -0.385318   3.668050  -0.105 0.916388    
+PromoteurJ23114:TerminateurB1006:RBSB0032                            0.059565   2.931892   0.020 0.983801    
+PromoteurPDummy:TerminateurB1006:RBSB0032                                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSB0032                              -0.280496   3.234916  -0.087 0.930944    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSB0032                 0.945746   2.994950   0.316 0.752325    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSB0032                 1.503584   3.117243   0.482 0.629811    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSB0032                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSB0032                    0.648437   3.234916   0.200 0.841225    
+PromoteurJ23111:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSB0032                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSB0032                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSB0032                 -0.263969   3.234916  -0.082 0.935004    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSB0032                 -1.894674   3.234916  -0.586 0.558393    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSB0032                        NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSB0032                           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSmetH_RBS                        -0.297639   3.668050  -0.081 0.935366    
+PromoteurJ23114:TerminateurB0015:RBSmetH_RBS                        -0.642803   3.056708  -0.210 0.833541    
+PromoteurPDummy:TerminateurB0015:RBSmetH_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSmetH_RBS                            0.120224   3.117243   0.039 0.969253    
+PromoteurJ23111:TerminateurB1006:RBSmetH_RBS                        -0.335870   3.668050  -0.092 0.927086    
+PromoteurJ23114:TerminateurB1006:RBSmetH_RBS                         0.154655   2.931892   0.053 0.957957    
+PromoteurPDummy:TerminateurB1006:RBSmetH_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSmetH_RBS                           -0.089837   3.234916  -0.028 0.977858    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSmetH_RBS              0.685113   2.994950   0.229 0.819169    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSmetH_RBS              1.585230   3.117243   0.509 0.611343    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSmetH_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSmetH_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSmetH_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSmetH_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSmetH_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSmetH_RBS              -1.027758   3.234916  -0.318 0.750863    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSmetH_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSmetH_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSnudC_RBS                        -0.278092   3.668050  -0.076 0.939602    
+PromoteurJ23114:TerminateurB0015:RBSnudC_RBS                        -0.800889   3.056708  -0.262 0.793441    
+PromoteurPDummy:TerminateurB0015:RBSnudC_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSnudC_RBS                                  NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSnudC_RBS                        -0.403754   3.668050  -0.110 0.912404    
+PromoteurJ23114:TerminateurB1006:RBSnudC_RBS                         0.085270   2.931892   0.029 0.976812    
+PromoteurPDummy:TerminateurB1006:RBSnudC_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSnudC_RBS                            0.222731   3.234916   0.069 0.945140    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSnudC_RBS              0.694011   3.176625   0.218 0.827165    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSnudC_RBS              1.531610   3.176625   0.482 0.629949    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSnudC_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSnudC_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSnudC_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSnudC_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSnudC_RBS              -0.770633   3.234916  -0.238 0.811823    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSnudC_RBS              -1.704585   3.234916  -0.527 0.598516    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSnudC_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSnudC_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSpilO_RBS                        -0.278108   3.668050  -0.076 0.939599    
+PromoteurJ23114:TerminateurB0015:RBSpilO_RBS                        -1.018973   3.117243  -0.327 0.743918    
+PromoteurPDummy:TerminateurB0015:RBSpilO_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSpilO_RBS                            1.632844   3.056708   0.534 0.593495    
+PromoteurJ23111:TerminateurB1006:RBSpilO_RBS                        -0.317326   3.668050  -0.087 0.931101    
+PromoteurJ23114:TerminateurB1006:RBSpilO_RBS                         0.216641   2.994950   0.072 0.942369    
+PromoteurPDummy:TerminateurB1006:RBSpilO_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSpilO_RBS                           -1.456183   3.081065  -0.473 0.636726    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSpilO_RBS              0.868381   2.994950   0.290 0.771998    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSpilO_RBS              1.582467   3.176625   0.498 0.618630    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSpilO_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSpilO_RBS                 0.595466   3.117243   0.191 0.848599    
+PromoteurJ23111:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSpilO_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSpilO_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSpilO_RBS              -0.669779   3.234916  -0.207 0.836073    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSpilO_RBS              -1.709025   3.292176  -0.519 0.603950    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSpilO_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSpilO_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrapA_RBS                        -0.331716   3.668050  -0.090 0.927985    
+PromoteurJ23114:TerminateurB0015:RBSrapA_RBS                         0.398240   4.322838   0.092 0.926643    
+PromoteurPDummy:TerminateurB0015:RBSrapA_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrapA_RBS                           -0.477263   3.117243  -0.153 0.878389    
+PromoteurJ23111:TerminateurB1006:RBSrapA_RBS                        -0.109963   3.668050  -0.030 0.976098    
+PromoteurJ23114:TerminateurB1006:RBSrapA_RBS                         1.072004   4.235499   0.253 0.800314    
+PromoteurPDummy:TerminateurB1006:RBSrapA_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrapA_RBS                           -0.828852   3.234916  -0.256 0.797905    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrapA_RBS              0.818740   2.994950   0.273 0.784700    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrapA_RBS                    NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrapA_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrapA_RBS                       NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrapA_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrapA_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrapA_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrapA_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSRDummy                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSRDummy                                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSRDummy                                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSRDummy                      NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSRDummy                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSRDummy                                NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSRDummy                                   NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSRDummy                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSRDummy                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSribo727_trp_                              NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSribo727_trp_                           NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSribo727_trp_                              NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSribo727_trp_                NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSribo727_trp_                   NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSribo727_trp_                          NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSribo727_trp_                             NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSribo727_trp_                 NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSribo727_trp_                    NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrpiJ_RBS                        -0.422275   3.668050  -0.115 0.908403    
+PromoteurJ23114:TerminateurB0015:RBSrpiJ_RBS                         1.112492   3.348456   0.332 0.739872    
+PromoteurPDummy:TerminateurB0015:RBSrpiJ_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrpiJ_RBS                           -0.440806   2.994950  -0.147 0.883058    
+PromoteurJ23111:TerminateurB1006:RBSrpiJ_RBS                        -0.486010   3.668050  -0.132 0.894653    
+PromoteurJ23114:TerminateurB1006:RBSrpiJ_RBS                         1.972643   3.564704   0.553 0.580294    
+PromoteurPDummy:TerminateurB1006:RBSrpiJ_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrpiJ_RBS                            0.123430   3.176625   0.039 0.969024    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrpiJ_RBS              0.785147   2.994950   0.262 0.793328    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrpiJ_RBS              3.534757   3.914497   0.903 0.367044    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrpiJ_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrpiJ_RBS                 0.691198   3.176625   0.218 0.827854    
+PromoteurJ23111:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrpiJ_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrpiJ_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrpiJ_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrpiJ_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSrpoB_RBS                        -0.036604   2.994950  -0.012 0.990254    
+PromoteurJ23114:TerminateurB0015:RBSrpoB_RBS                        -0.848840   3.616746  -0.235 0.814557    
+PromoteurPDummy:TerminateurB0015:RBSrpoB_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSrpoB_RBS                            0.167457   3.234916   0.052 0.958740    
+PromoteurJ23111:TerminateurB1006:RBSrpoB_RBS                        -0.523354   2.994950  -0.175 0.861363    
+PromoteurJ23114:TerminateurB1006:RBSrpoB_RBS                        -0.719985   3.056708  -0.236 0.813902    
+PromoteurPDummy:TerminateurB1006:RBSrpoB_RBS                               NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSrpoB_RBS                           -0.182336   3.348456  -0.054 0.956599    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSrpoB_RBS                    NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSrpoB_RBS                 0.186106   3.348456   0.056 0.955703    
+PromoteurJ23111:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSrpoB_RBS                              NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSrpoB_RBS                                 NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSrpoB_RBS                     NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSrpoB_RBS              -2.596923   3.292176  -0.789 0.430661    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSrpoB_RBS                     NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSrpoB_RBS                        NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBStheoE_riboswitch                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBStheoE_riboswitch                       NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBStheoE_riboswitch                          NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBStheoE_riboswitch            NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBStheoE_riboswitch               NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBStheoE_riboswitch                      NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBStheoE_riboswitch                         NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBStheoE_riboswitch             NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBStheoE_riboswitch                NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB0015:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPP1:TerminateurB0015:RBSToxT_5UTR_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23111:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurJ23114:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPDummy:TerminateurB1006:RBSToxT_5UTR_riboswitch                   NA         NA      NA       NA    
+PromoteurPP1:TerminateurB1006:RBSToxT_5UTR_riboswitch                      NA         NA      NA       NA    
+PromoteurJ23111:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurJ23114:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurPDummy:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch        NA         NA      NA       NA    
+PromoteurPP1:TerminateurGluRS_terminator:RBSToxT_5UTR_riboswitch           NA         NA      NA       NA    
+PromoteurJ23111:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurJ23114:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurPDummy:TerminateurTDummy:RBSToxT_5UTR_riboswitch                  NA         NA      NA       NA    
+PromoteurPP1:TerminateurTDummy:RBSToxT_5UTR_riboswitch                     NA         NA      NA       NA    
+PromoteurJ23111:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurJ23114:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurPDummy:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch         NA         NA      NA       NA    
+PromoteurPP1:TerminateurtRNA_terminator:RBSToxT_5UTR_riboswitch            NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.118 on 423 degrees of freedom
+Multiple R-squared:  0.3888,	Adjusted R-squared:  0.1519 
+F-statistic: 1.641 on 164 and 423 DF,  p-value: 3.94e-05
+
+
